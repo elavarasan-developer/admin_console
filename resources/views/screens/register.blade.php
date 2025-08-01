@@ -150,7 +150,7 @@
             };
 
             $.ajax({
-                url: '{{ env('API_URL ') }}/register',
+                url: '{{ env('API_URL') }}/register',
                 type: 'POST',
                 headers: {
                     Accept: "application/json"
