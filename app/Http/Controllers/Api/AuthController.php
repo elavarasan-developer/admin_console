@@ -13,9 +13,6 @@ class AuthController extends Controller
 {
     public function register(Request $request)
     {
-        return response()->json([
-            'token_type' => 'Bearer'
-        ], 201);
 
         $data = $request->validate([
             'name'     => ['required', 'string', 'max:255'],
